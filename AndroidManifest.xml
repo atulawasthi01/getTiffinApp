@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yumtiff.mohitkumar.tiffin">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+
+      
+
+
+    <application
+        android:name=".app.AppController"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/appicon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/MyAppTheme">
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/fbappid" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity android:name=".Activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.LoginActivity"
+            android:label="@string/title_activity_login" />
+        <activity android:name=".Activity.SignupActivity" />
+        <activity
+            android:name=".Activity.ProfiledtlActivity"
+            android:label="@string/title_activity_profiledtl"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/MyAppTheme" />
+        <activity
+            android:name=".Activity.MyAccountActivity"
+            android:label="@string/title_activity_my_account"
+            android:theme="@style/MyAppTheme" />
+        <activity
+            android:name=".Activity.OffercouponActivity"
+            android:label="@string/title_activity_offercoupon"
+            android:theme="@style/MyAppTheme" />
+        <activity
+            android:name=".Activity.ReferwinActivity"
+            android:label="@string/title_activity_referwin"
+            android:theme="@style/MyAppTheme" />
+        <activity
+            android:name=".Activity.SettingActivity"
+            android:label="@string/title_activity_setting"
+            android:theme="@style/MyAppTheme" />
+        <activity
+            android:name=".Activity.NotificationActivity"
+            android:label="@string/title_activity_notification"
+            android:theme="@style/MyAppTheme" />
+        <activity
+            android:name=".Activity.BookorderActivity"
+            android:label="@string/title_activity_bookorder"
+            android:theme="@style/MyAppTheme" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/MyAppTheme" />
+        <activity
+            android:name=".Activity.MyProfileActivity"
+            android:label="@string/title_activity_my_profile"
+            android:theme="@style/MyAppTheme" />
+        <activity
+            android:name=".Activity.MyOrderActivity"
+            android:label="@string/title_activity_my_order"
+            android:theme="@style/MyAppTheme" />
+        <activity
+            android:name=".Activity.HistoryActivity"
+            android:label="@string/title_activity_history"
+            android:theme="@style/MyAppTheme" />
+        <activity
+            android:name=".Activity.ChangePwdActivity"
+            android:label="@string/title_activity_change_pwd"
+            android:theme="@style/MyAppTheme" />
+        <activity
+            android:name=".Activity.AlcarteDiscriptionActivity"
+            android:label="@string/title_activity_dish_discription"
+            android:theme="@style/MyAppTheme" />
+        <activity
+            android:name=".Activity.AboutUsActivity"
+            android:label="@string/title_activity_about_us"
+            android:theme="@style/MyAppTheme" />
+        <activity
+            android:name=".Activity.PrivacypolicyActivity"
+            android:label="@string/title_activity_privacypolicy"
+            android:theme="@style/MyAppTheme" />
+        <activity
+            android:name=".Activity.TermsConditionActivity"
+            android:label="@string/title_activity_terms_condition"
+            android:theme="@style/MyAppTheme" />
+        <activity
+            android:name=".Activity.FeedbackActivity"
+            android:label="@string/title_activity_feedback"
+            android:theme="@style/MyAppTheme" />
+        <activity
+            android:name=".Activity.HelpSupportActivity"
+            android:label="@string/title_activity_help_support"
+            android:theme="@style/MyAppTheme" />
+        <activity
+            android:name=".Activity.RateusActivity"
+            android:label="@string/title_activity_rateus"
+            android:theme="@style/MyAppTheme" />
+        <activity
+            android:name=".Activity.LogoutActivity"
+            android:label="@string/title_activity_logout"
+            android:theme="@style/MyAppTheme" />
+        <activity
+            android:name=".Activity.PaymentActivity"
+            android:label="@string/title_activity_payment"
+            android:theme="@style/MyAppTheme" />
+        <activity
+            android:name=".Activity.RatingActivity"
+            android:label="@string/title_activity_payment"
+            android:theme="@style/MyAppTheme" />
+        <activity
+            android:name=".app.MainActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".Activity.TdayDiscriptionActivity"
+            android:label="@string/title_activity_dinner_discription"
+            android:theme="@style/MyAppTheme" />
+        <activity
+            android:name=".Activity.CheckoutActivity"
+            android:label="CheckoutActivity"
+            android:theme="@style/MyAppTheme" />
+        <activity
+            android:name=".Activity.Maincart"
+            android:label="Maincart"
+            android:theme="@style/MyAppTheme" />
+        <activity
+            android:name=".Activity.FaqActivity"
+            android:label="@string/title_activity_faq"
+            android:theme="@style/MyAppTheme" />
+        <activity
+            android:name=".Activity.TiffinDiscriptionActivity"
+            android:label="@string/title_activity_tiffin_discription"
+            android:theme="@style/MyAppTheme" />
+        <activity
+            android:name=".Activity.AdonsActivity"
+            android:label="@string/title_activity_adons"
+            android:theme="@style/MyAppTheme" />
+        <activity
+            android:name=".Activity.AdonsDiscriptionActivity"
+            android:label="@string/title_activity_adons_discription"
+            android:theme="@style/MyAppTheme" />
+        <activity
+            android:name=".Activity.PreOrderSelectListActivity"
+            android:label="@string/title_activity_pre_order_select_list"
+            android:theme="@style/MyAppTheme" />
+        <activity
+            android:name=".Activity.TiffinCheckoutActivity"
+            android:label="@string/title_activity_tiffin_checkout"
+            android:theme="@style/MyAppTheme" />
+        <activity android:name=".Activity.PreCheckoutActivity" />
+        <activity android:name=".Activity.UserlocationActivity" />
+        <activity android:name=".Activity.LocationActivity" />
+        <activity android:name=".Activity.CartActivity" />
+        <activity android:name=".Activity.PreActivity" />
+        <activity android:name=".Activity.DeliveryAddressActivity"></activity>
+    </application>
+
+</manifest>
